@@ -7,7 +7,7 @@ export const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        remoteEntry: 'https://mfe-angular-poc-remote.vercel.app/remoteEntry.js',
         exposedModule: './FlightModule',
       }).then((m) => m.FlightModule),
   },
